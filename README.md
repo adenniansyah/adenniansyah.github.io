@@ -1,2 +1,5 @@
-# denniansyah.github.io
-Portofolio pribadi Arjuanda Denniansyah
+# Portofolio Arjuanda Denniansyah
+
+Website portofolio pribadi (HTML, CSS, JavaScript).
+
+🔗 https://adenniansyah.github.io
