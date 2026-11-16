@@ -4,132 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arjuanda Denniansyah | Portofolio</title>
-  <meta name="description" content="Portofolio Nama Kamu - Web Developer">
+  <meta name="description" content="Portofolio Arjuanda Denniansyah, mahasiswa Teknik Informatika yang mendalami Fullstack Web dan Cloud.">
+  <meta property="og:title" content="Arjuanda Denniansyah | Portofolio">
+  <meta property="og:description" content="Mahasiswa Teknik Informatika, Fullstack Web & Cloud.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="glow g1"></div><div class="glow g2"></div>
 
   <header class="nav">
-    <a href="#home" class="logo">NK.</a>
+    <a href="#home" class="logo">AD.</a>
     <nav>
       <a href="#about">Tentang</a>
       <a href="#projects">Proyek</a>
       <a href="#skills">Skill</a>
       <a href="#certificates">Sertifikat</a>
       <a href="#contact">Kontak</a>
-      <button id="theme-toggle" aria-label="Ganti tema">🌙</button>
+      <button id="theme-toggle" aria-label="Ganti tema">☀️</button>
     </nav>
   </header>
 
   <main>
-    <!-- HERO -->
     <section id="home" class="hero">
-      <p class="eyebrow">Halo, saya</p>
-      <h1>Arjuanda Denniansyah<span class="accent">.</span></h1>
-      <p class="tagline">Web Developer yang membangun website cepat, rapi, dan mudah digunakan.</p>
-      <div class="cta">
-        <a href="#projects" class="btn primary">Lihat Proyek</a>
-        <a href="#contact" class="btn ghost">Hubungi Saya</a>
+      <div class="hero-text">
+        <p class="hello">Halo, saya</p>
+        <h1>Arjuanda<br>Denniansyah</h1>
+        <p class="role">Mahasiswa Informatika yang membangun <span id="typed" class="typed"></span><span class="caret"></span></p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">Lihat proyek</a>
+          <a href="#contact" class="btn ghost">Hubungi saya</a>
+        </div>
+      </div>
+      <div class="photo-wrap">
+        <div class="photo">
+          <img src="assets/foto.jpg" alt="Foto Arjuanda Denniansyah" onerror="this.remove()">
+          <span class="initials">AD</span>
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section reveal">
-      <h2>Tentang Saya</h2>
-      <div class="about-grid">
-        <img src="assets/foto.jpg" alt="Foto Nama Kamu" class="avatar">
-        <p>
-          Saya seorang Mahasiswa yang sedang belajar menjadi web  developer dari Kalimantan utara kota tarakan yang fokus pada pengembangan web modern.
-          Saya suka mengubah ide menjadi produk yang berguna dan enak dilihat.
-          Saat ini saya sedang mendalami Fullstack Web Developer
-        </p>
+    <section id="about" class="section">
+      <h2>Tentang saya</h2>
+      <div class="about">
+        <p>Saya mahasiswa Teknik Informatika di Universitas Muhammadiyah Jakarta, berasal dari Tarakan, Kalimantan Utara. Saya suka mengubah ide menjadi produk yang berguna, dan saat ini sedang mendalami Fullstack Web serta layanan cloud.</p>
+        <ul class="facts">
+          <li><b>Kampus</b>Universitas Muhammadiyah Jakarta</li>
+          <li><b>Asal</b>Tarakan, Kalimantan Utara</li>
+          <li><b>Fokus</b>Fullstack Web, Cloud</li>
+          <li><b>Bahasa</b>Indonesia, Inggris, Turki</li>
+        </ul>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section reveal">
-      <h2>Proyek Pilihan</h2>
+    <section id="projects" class="section">
+      <h2>Proyek pilihan</h2>
       <div class="cards">
         <article class="card">
-          <img src="assets/projects/proyek1.jpg" alt="Screenshot Proyek 1">
+          <div class="thumb">
+            <img src="assets/projects/bookstore.jpg" alt="Tampilan aplikasi Book Store" onerror="this.remove()">
+            <span>Book Store</span>
+          </div>
           <div class="card-body">
             <h3>Aplikasi Book Store</h3>
-            <p>Aplikasi Book Store.</p>
+            <p>Aplikasi toko buku dengan katalog dan pengelolaan data buku.</p>
             <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             <div class="links">
-              <a href="https://github.com/adenniansyah/Projek_BNSP" target="_blank" rel="noopener">Kode ↗</a>
+              <a href="https://github.com/adenniansyah" target="_blank" rel="noopener">Lihat kode ↗</a>
             </div>
           </div>
         </article>
+      </div>
+    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section reveal">
+    <section id="skills" class="section">
       <h2>Skill</h2>
       <div class="skills">
-        <div class="skill-group">
-          <h3>Frontend</h3>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
-        </div>
-        <div class="skill-group">
-          <h3>Backend</h3>
-          <div class="tags"><span>Node.js</span><span>PHP</span><span>MySQL</span></div>
-        </div>
-        <div class="skill-group">
-          <h3>Tools</h3>
-          <div class="tags"><span>Git</span><span>Figma</span><span>VS Code</span></div>
-        </div>
-        <h3>OSS (Object Storage Service)</h3>
-          <div class="tags"><span>Git</span><span>oss</span><span>ali babacloud</span></div>
-        </div>
+        <div class="skill-group"><h3>Frontend</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div></div>
+        <div class="skill-group"><h3>Backend</h3>
+          <div class="tags"><span>Node.js</span><span>PHP</span><span>MySQL</span></div></div>
+        <div class="skill-group"><h3>Cloud</h3>
+          <div class="tags"><span>Alibaba Cloud</span><span>OSS</span></div></div>
+        <div class="skill-group"><h3>Tools</h3>
+          <div class="tags"><span>Git</span><span>Figma</span><span>VS Code</span></div></div>
       </div>
     </section>
 
-        <!-- SERTIFIKAT -->
-    <section id="certificates" class="section reveal">
+    <section id="certificates" class="section">
       <h2>Sertifikat</h2>
       <div class="cert-grid">
-
-        <a href="assets/sertifikat/sertifikat-oss.jpg" target="_blank" class="cert">
-          <img src="assets/sertifikat/sertifikat-oss.jpg" alt="Sertifikat Alibaba cloud">
-          <p>BelaJAR OSS (Object Storage Service) <br><span>Alibaba Cloude, 2026</span></p>
+        <a href="assets/sertifikat/sertifikat-oss.jpg" target="_blank" rel="noopener" class="cert">
+          <div class="cert-img"><img src="assets/sertifikat/sertifikat-oss.jpg" alt="Sertifikat OSS Fundamentals dari Alibaba Cloud" onerror="this.remove()"></div>
+          <p>Belajar OSS (Object Storage Service)<span>Alibaba Cloud, 2026</span></p>
         </a>
-
-        <a href="assets/sertifikat/sertifikatPKM.jpg" target="_blank" class="cert">
-          <img src="assets/sertifikat/sertifikatPKM.jpg" alt="Program Kreatifitas Mahasiswa">
-          <p>Gagasan Futuristik<br><span>IMBELMAWA, 2026</span></p>
+        <a href="assets/sertifikat/sertifikatPKM.jpg" target="_blank" rel="noopener" class="cert">
+          <div class="cert-img"><img src="assets/sertifikat/sertifikatPKM.jpg" alt="Sertifikat Gagasan Futuristik IMBELMAWA" onerror="this.remove()"></div>
+          <p>Gagasan Futuristik<span>IMBELMAWA, 2026</span></p>
         </a>
-
-        <a href="assets/sertifikat/sertifikat-bahasal.jpg" target="_blank" class="cert">
-          <img src="assets/sertifikat/sertifikat-bahasal.jpg" alt="Karabuk University">
-          <p>Bahasa turki<br><span>Turkish language, 2021</span></p>
+        <a href="assets/sertifikat/sertifikat-bahasal.jpg" target="_blank" rel="noopener" class="cert">
+          <div class="cert-img"><img src="assets/sertifikat/sertifikat-bahasal.jpg" alt="Sertifikat Bahasa Turki Karabuk University" onerror="this.remove()"></div>
+          <p>Bahasa Turki<span>Karabuk University, 2021</span></p>
         </a>
-
-        <a href="assets/sertifikat/sertifikat-AI.jpg" target="_blank" class="cert">
-          <img src="assets/sertifikat/sertifikat-AI.png" alt="Muhammadiyah Jakarta University">
-          <p>Chet bot made easy<br><span>Teknik Infomatika, 2021</span></p>
+        <a href="assets/sertifikat/sertifikat-AI.jpg" target="_blank" rel="noopener" class="cert">
+          <div class="cert-img"><img src="assets/sertifikat/sertifikat-AI.jpg" alt="Sertifikat Chatbot Made Easy Universitas Muhammadiyah Jakarta" onerror="this.remove()"></div>
+          <p>Chatbot Made Easy<span>Teknik Informatika UMJ, 2026</span></p>
         </a>
-
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section reveal contact">
-      <h2>Mari Berkolaborasi</h2>
-      <p>Punya proyek atau sekadar ingin menyapa? Kirim pesan kapan saja.</p>
-      <a href="mailto:adenniansyah@gmail.com" class="btn primary">adenniansyah@gmail.com</a>
+    <section id="contact" class="section contact">
+      <h2>Mari berkolaborasi</h2>
+      <p>Punya proyek atau ingin berkenalan? Kirim pesan kapan saja.</p>
+      <a href="mailto:EMAIL-KAMU@gmail.com" class="btn primary">EMAIL-KAMU@gmail.com</a>
       <div class="socials">
         <a href="https://github.com/adenniansyah" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://instagram.com/kande123" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://linkedin.com/in/USERNAME-KAMU" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/USERNAME-KAMU" target="_blank" rel="noopener">Instagram</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Nama Kamu. Dibuat dengan ❤️ dan GitHub Pages.</p>
-  </footer>
-
+  <footer><p>© 2026 Arjuanda Denniansyah</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
